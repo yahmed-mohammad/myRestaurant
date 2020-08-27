@@ -45,11 +45,7 @@ function routeConfig ($stateProvider) {
       url: '/signup',
       templateUrl: 'src/public/signup/signup.html',
       controller: 'SignupController as signup',
-      resolve: {
-        completed: ['SignUpService', function(SignUpService) {
-          return SignUpService.isCompleted();
-        }]
-      }
+      
     });
 }
 })();

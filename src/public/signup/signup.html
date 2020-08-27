@@ -1,6 +1,6 @@
 <div class="container">
 
-    <form class="well form-horizontal" name="regForm"  id="contact_form">
+    <form class="well form-horizontal" name="regForm" ng-if="signup.form">
 <fieldset>
 
 <!-- Form Name -->
@@ -82,13 +82,13 @@
   <label class="col-md-4 control-label"></label>
   <div class="col-md-4"><br>
     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" class="btn btn-warning" ng-disabled="regForm.$invalid"
-    ng-click="$ctrl.submit()">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSIGN UP <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+    ng-click="signup.submit()">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSIGN UP <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
   </div>
 </div>
 
 <!--Message to Display-->
 <div ng-if="signup.completed" style="color:green">
-    Your information has been saved
+    <h4><center><b>Your information has been saved!!!</b></center></h4>
 </div>
 
 </fieldset>
