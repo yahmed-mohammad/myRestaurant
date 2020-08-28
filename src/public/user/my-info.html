@@ -6,23 +6,19 @@
         </div>
         </center>
         <div ng-show="myInfoCtrl.myInfo.length > 0" class="col-md-12 myinfo">
-            <h2 class="text-center"><span class="glyphicon glyphicon-info-sign"></span> My Info</h2>
+            <h2 class="text-center"><span class="glyphicon glyphicon-info-sign"></span> My Information</h2>
             <div class="col-md-10 col-centered">
               <div class="row">
-                  <div class="myinfo-heading">First Name</div>
-                  <div class="myinfo-content">{{myInfoCtrl.myInfo[0].firstName}}</div>
+                  <div class="myinfo-heading">First Name : {{myInfoCtrl.myInfo[0].firstName}}</div>
               </div>
               <div class="row">
-                  <div class="myinfo-heading">Last Name</div>
-                  <div class="myinfo-content">{{myInfoCtrl.myInfo[0].lastName}}</div>
+                  <div class="myinfo-heading">Last Name : {{myInfoCtrl.myInfo[0].lastName}}</div>
               </div>
               <div class="row">
-                  <div class="myinfo-heading"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email</div>
-                  <div class="myinfo-content">{{myInfoCtrl.myInfo[0].email}}</div>
+                  <div class="myinfo-heading"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email : {{myInfoCtrl.myInfo[0].email}}</div>  
               </div>
               <div class="row">
-                  <div class="myinfo-heading"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Phone no.</div>
-                  <div class="myinfo-content">{{myInfoCtrl.myInfo[0].phone}}</div>
+                  <div class="myinfo-heading"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Phone : {{myInfoCtrl.myInfo[0].phone}}</div>
               </div>
               <div class="row">
                   <div class="myinfo-heading">Favorite Dish</div>
